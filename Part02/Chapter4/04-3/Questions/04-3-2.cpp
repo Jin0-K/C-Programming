@@ -19,6 +19,7 @@ private :
     char *company_name;
     char *phone_num;
     int position;
+
 public :
     NameCard(char *myname, char *compname, char *phonenum, int comppos)
         : position(comppos) {
@@ -30,12 +31,12 @@ public :
             company_name = new char[len];
             strcpy(company_name, compname);
 
-            len = strlen(phone_num) + 1;
+            len = strlen(phonenum) + 1;
             phone_num = new char[len];
             strcpy(phone_num, phonenum);
     }
 
-    void ShowNameCardInfo(void) const {
+    void ShowNameCardInfo() const {
         cout << "Name: " << name << endl;
         cout << "Company: " << company_name << endl;
         cout << "Phone Number: " << phone_num << endl;
