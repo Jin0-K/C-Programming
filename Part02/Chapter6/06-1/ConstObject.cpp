@@ -6,9 +6,8 @@ class SoSimple {
 private :
     int num;
 public :
-    SoSimple(int n) 
+    SoSimple(int n)
         : num(n) {}
-        
     SoSimple &AddNum(int n) {
         num += n;
         return *this;

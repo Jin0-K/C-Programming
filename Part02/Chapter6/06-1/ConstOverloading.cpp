@@ -6,18 +6,16 @@ class SoSimple {
 private :
     int num;
 public :
-    SoSimple(int n) 
+    SoSimple(int n)
         : num(n) {}
-        
+
     SoSimple &AddNum(int n) {
         num += n;
         return *this;
     }
-
     void SimpleFunc() {
         cout << "SimpleFunc: " << num << endl;
     }
-
     void SimpleFunc() const {
         cout << "const SimpleFunc: " << num << endl;
     }
